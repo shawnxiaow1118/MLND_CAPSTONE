@@ -1,0 +1,30 @@
+This project is to program a robot mouse that can explore a virtual maze and later find an optimal way moving from the start location to goal area. At first the robot has no knowledge about the maze except for the maze dimension, thus it need to use the first run to explore the maze to increase its knowledge of the maze. In the second run, the robot should follow the instructions made by the navigator based the the maze known so far. Our goal is to let the robot reach the goals use as less moves as possible. So, we can't use too many moves in the first run just to explore all the maze. At same time, we should assure that the maze's explored area is not too low, which will be hard for the navigator to find the true optimal moves. For more information please refer to report.pdf
+
+Setup
+This project has the following dependency:
+	Python 2.7
+	python Turtle
+	numpy
+	Queue
+	heapq
+	random
+
+Display maze:
+	$ python showmaze.py test_maze_01.txt
+
+
+Run algorithm:
+$ python tester.py test_maze_01.txt
+
+Files:
+	maze.py: 			original provided maze parsing class
+	robot.py: 			robot class
+	showmaze.py: 		display maze
+	tester.py: 			main method to run the algoritm
+	mapper.py:			class to store and update maze information
+	Navigator.py:		class to plan paht for robot
+	free.txt: 			self found other test maze
+	test_maze_01.txt:	test maze 1
+	test_maze_02.txt:	test maze 2
+	test_maze_03.txt:	test maze 3
+	Robot_Motion Planning_Report.pdf : report
